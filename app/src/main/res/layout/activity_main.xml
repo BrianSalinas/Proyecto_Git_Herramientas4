@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="0dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:autoText="true"
+        android:backgroundTint="#5eede9 "
+        android:gravity="right"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFFFF"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="569dp"
+        android:background="#FFFFFF"
+        android:gravity="bottom|fill"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/frase"
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:ems="10"
+            android:hint="Ingrese una frase..."
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/AC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="50dp"
+                android:height="100dp"
+                android:backgroundTint="#EEEEEE"
+                android:fontFamily="monospace"
+                android:onClick="borrarTodo"
+                android:text="@string/AC"
+                android:textColor="@color/black"
+                app:cornerRadius="200dp"
+                app:rippleColor="#000000" />
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="50dp"
+                android:height="100dp"
+                android:backgroundTint="#EEEEEE"
+                android:fontFamily="monospace"
+                android:onClick="borrarLinea"
+                android:text="@string/borrar"
+                android:textColor="@color/black"
+                app:cornerRadius="200dp"
+                app:rippleColor="#000000" />
+
+            <Button
+                android:id="@+id/porcentaje"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="50dp"
+                android:height="100dp"
+                android:backgroundTint="#EEEEEE"
+                android:fontFamily="monospace"
+                android:onClick="botonPorcentajeF"
+                android:text="@string/percent"
+                android:textColor="@color/black"
+                app:cornerRadius="200dp" />
+
+            <Button
+                android:id="@+id/division"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="50dp"
+                android:height="100dp"
+                android:backgroundTint="#5eede9"
+                android:backgroundTintMode="add"
+                android:fontFamily="monospace"
+                android:onClick="botonDivisionF"
+                android:text="@string/div"
+                android:textColor="@color/black"
+                app:cornerRadius="200dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/boton7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="50dp"
+                android:height="100dp"
+                android:backgroundTint="#EEEEEE"
+                android:fontFamily="monospace"
+                android:onClick="botonSiete"
+                android:text="@string/siete"
+                android:textColor="@color/black"
+                app:cornerRadius="200dp" />
+
+            <Button
+                android:id="@+id/boton8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="50dp"
+                android:height="100dp"
+                android:backgroundTint="#EEEEEE"
+                android:fontFamily="monospace"
+                android:onClick="botonOcho"
+                android:text="@string/ocho"
+                android:textColor="@color/black"
+                app:cornerRadius="200dp" />
+
+            <Button
+                android:id="@+id/boton9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="50dp"
+                android:height="100dp"
+                android:backgroundTint="#EEEEEE"
+                android:fontFamily="monospace"
+                android:onClick="botonNueve"
+                android:text="@string/nueve"
+                android:textColor="@color/black"
+                app:cornerRadius="200dp" />
+
+            <Button
+                android:id="@+id/x"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="50dp"
+                android:height="100dp"
+                android:backgroundTint="#5eede9"
+                android:fontFamily="monospace"
+                android:onClick="botonMultiplicacionF"
+                android:text="@string/multi"
+                android:textColor="@color/black"
+                app:cornerRadius="200dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/boton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="50dp"
+                android:height="100dp"
+                android:backgroundTint="#EEEEEE"
+                android:fontFamily="monospace"
+                android:onClick="botonCuatro"
+                android:text="@string/cuatro"
+                android:textColor="@color/black"
+                app:cornerRadius="200dp" />
+
+            <Button
+                android:id="@+id/boton5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="50dp"
+                android:height="100dp"
+                android:backgroundTint="#EEEEEE"
+                android:fontFamily="monospace"
+                android:onClick="botonCinco"
+                android:text="@string/cinco"
+                android:textColor="@color/black"
+                app:cornerRadius="200dp" />
+
+            <Button
+                android:id="@+id/boton6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="50dp"
+                android:height="100dp"
+                android:backgroundTint="#EEEEEE"
+                android:fontFamily="monospace"
+                android:onClick="botonSeis"
+                android:text="@string/seis"
+                android:textColor="@color/black"
+                app:cornerRadius="200dp" />
+
+            <Button
+                android:id="@+id/menos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="50dp"
+                android:height="100dp"
+                android:backgroundTint="#5eede9"
+                android:fontFamily="monospace"
+                android:onClick="botonRestaF"
+                android:text="@string/menos"
+                android:textColor="@color/black"
+                app:cornerRadius="200dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/boton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="50dp"
+                android:height="100dp"
+                android:backgroundTint="#EEEEEE"
+                android:fontFamily="monospace"
+                android:onClick="botonUno"
+                android:text="@string/uno"
+                android:textColor="@color/black"
+                app:cornerRadius="200dp" />
+
+            <Button
+                android:id="@+id/boton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="50dp"
+                android:height="100dp"
+                android:backgroundTint="#EEEEEE"
+                android:fontFamily="monospace"
+                android:onClick="botonDos"
+                android:text="@string/dos"
+                android:textColor="@color/black"
+                app:cornerRadius="200dp" />
+
+            <Button
+                android:id="@+id/boton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="50dp"
+                android:height="100dp"
+                android:backgroundTint="#EEEEEE"
+                android:fontFamily="monospace"
+                android:onClick="botonTres"
+                android:text="@string/tres"
+                android:textColor="@color/black"
+                app:cornerRadius="200dp" />
+
+            <Button
+                android:id="@+id/mas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="50dp"
+                android:height="100dp"
+                android:backgroundTint="#5eede9"
+                android:fontFamily="monospace"
+                android:onClick="botonSumaF"
+                android:text="@string/mas"
+                android:textColor="@color/black"
+                app:cornerRadius="200dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/boton0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="50dp"
+                android:height="100dp"
+                android:backgroundTint="#EEEEEE"
+                android:fontFamily="monospace"
+                android:onClick="botonCero"
+                android:text="@string/cero"
+                android:textColor="@color/black"
+                app:cornerRadius="200dp" />
+
+            <Button
+                android:id="@+id/botonPunto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="50dp"
+                android:height="100dp"
+                android:backgroundTint="#EEEEEE"
+                android:fontFamily="monospace"
+                android:onClick="botonPuntoF"
+                android:text="@string/punto"
+                android:textColor="@color/black"
+                app:cornerRadius="200dp" />
+
+            <Button
+                android:id="@+id/botonEqual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="50dp"
+                android:height="100dp"
+                android:backgroundTint="#5eede9"
+                android:fontFamily="monospace"
+                android:onClick="botonResultado"
+                android:text="@string/igual"
+                android:textColor="@color/black"
+                app:cornerRadius="200dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
