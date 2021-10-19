@@ -40,10 +40,9 @@ isDarkModeOn=getDarkModeStatus();
                 }
             }
            });
-//Metodo que ejecuta el modo claro y el modo oscuro
-
 
     }
+    //Metodo que ejecuta el modo claro y el modo oscuro
     private boolean getDarkModeStatus(){
         int nightModeFlags=
                 MainActivity.this.getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK;
