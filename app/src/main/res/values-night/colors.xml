@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white2">#EEEEEE</color>
+
+    //Colores del modo dark
+    <color name="textColor">#EEEEEE</color>
+    <color name="backgroundColor">#212121</color>
+</resources>
