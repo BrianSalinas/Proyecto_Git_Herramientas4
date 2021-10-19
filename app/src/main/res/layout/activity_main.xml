@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/primaryLight"
+    android:background="@drawable/back"
     tools:context=".MainActivity">
 
     <TextView
@@ -123,7 +123,7 @@
                 android:onClick="botonDivisionF"
                 android:text="@string/div"
                 android:textColor="@color/primaryblack"
-                app:backgroundTint="#00BCD4"
+                app:backgroundTint="#00E5FF"
                 app:backgroundTintMode="add"
                 app:cornerRadius="200dp" />
 
@@ -188,7 +188,7 @@
                 android:onClick="botonMultiplicacionF"
                 android:text="@string/multi"
                 android:textColor="@color/primaryblack"
-                app:backgroundTint="#00BCD4"
+                app:backgroundTint="#00E5FF"
                 app:cornerRadius="200dp" />
         </LinearLayout>
 
@@ -251,7 +251,7 @@
                 android:onClick="botonRestaF"
                 android:text="@string/menos"
                 android:textColor="@color/primaryblack"
-                app:backgroundTint="#00BCD4"
+                app:backgroundTint="#00E5FF"
                 app:cornerRadius="200dp" />
         </LinearLayout>
 
@@ -314,7 +314,7 @@
                 android:onClick="botonSumaF"
                 android:text="@string/mas"
                 android:textColor="@color/primaryblack"
-                app:backgroundTint="#00BCD4"
+                app:backgroundTint="#00E5FF"
                 app:cornerRadius="200dp" />
         </LinearLayout>
 
@@ -363,7 +363,7 @@
                 android:onClick="botonResultado"
                 android:text="@string/igual"
                 android:textColor="@color/primaryblack"
-                app:backgroundTint="#00BCD4"
+                app:backgroundTint="#00E5FF"
                 app:cornerRadius="200dp" />
 
         </LinearLayout>
