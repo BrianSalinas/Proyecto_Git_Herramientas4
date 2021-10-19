@@ -120,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
         }else{
             //en el caso de que solo se quiera contar las vocales de una cadena se ingresa en esta opcion
             Vocales frase = new Vocales(et.getText().toString()); //se instancia la clase Vocales en la variable frase que tendrá un tipo Vocales. Se ingresa los datos que necesita el constructor
-            tv.setText(frase.contarFrases()); //se ingresa por pantalla la frase que returna el metodo contarFrases dentro de la case Vocales
+            tv.setText(frase.contarFrases()+"\n"+frase.contarNVocales()); //se ingresa por pantalla la frase que returna el metodo contarFrases dentro de la case Vocales
             et.setText(""); //se muestra por pantalla
         }
 
