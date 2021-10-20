@@ -1,23 +1,61 @@
 package com.example.laboratorio_1;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
+
 import org.mariuszgromada.math.mxparser.*;
+
+import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Switch;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private TextView tv;
     private EditText et;
-
+    private Switch sw1;
+    Boolean isDarkModeOn=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) { //se crea el metodo onCreate, que seria lo primero que se ejecuta al abrir la aplicacion
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main); // se instancia el elemento activity_main que es donde se encuentra el diseño de nuestra aplicacion
         tv = (TextView)findViewById(R.id.result); // se declara el elemento textView que es lo que mostrará los resultados de lo ingresado por pantalla
         et = (EditText)findViewById(R.id.frase); // se declara el elemento editText con el que se controlará el ingreso de frases para contar las vocales
+        sw1=(Switch) findViewById(R.id.switchTema);// se declara el elemento Switch con el que se controlará el cambio de Tema claro al Oscuro
+isDarkModeOn=getDarkModeStatus();
+
+        sw1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(isDarkModeOn) {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+                isDarkModeOn=false;
+                }else{
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+                    isDarkModeOn=true;
+                }
+            }
+           });
+//Metodo que ejecuta el modo claro y el modo oscuro
+
+
+    }
+    private boolean getDarkModeStatus(){
+        int nightModeFlags=
+                MainActivity.this.getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK;
+        switch (nightModeFlags){
+            case Configuration.UI_MODE_NIGHT_YES:
+                return true;
+            case Configuration.UI_MODE_NIGHT_NO:
+                return false;
+            case Configuration.UI_MODE_NIGHT_UNDEFINED:
+                return false;
+        }
+        return false;
     }
 
     //este metodo se ejecutará cada vez que se presione una tecla numerica dentro de la calculadora, luego de pasar por su metodo padre que traeria el numero que fupe presionado
