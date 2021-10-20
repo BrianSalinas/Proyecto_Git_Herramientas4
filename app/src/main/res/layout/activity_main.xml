@@ -72,14 +72,15 @@
                 android:width="50dp"
                 android:height="100dp"
                 android:backgroundTint="@color/white2"
-                android:fontFamily="monospace"
+                android:fontFamily="sans-serif-smallcaps"
                 android:onClick="borrarTodo"
                 android:text="@string/AC"
                 android:textColor="@color/primaryblack"
+                android:textSize="16sp"
                 app:backgroundTint="@color/white2"
                 app:cornerRadius="200dp"
                 app:rippleColor="#000000" />
-
+//AClisto
             <Button
                 android:id="@+id/delete"
                 android:layout_width="wrap_content"
@@ -88,10 +89,11 @@
                 android:width="50dp"
                 android:height="100dp"
                 android:backgroundTint="@color/white2"
-                android:fontFamily="monospace"
+                android:fontFamily="sans-serif-smallcaps"
                 android:onClick="borrarLinea"
                 android:text="@string/borrar"
                 android:textColor="@color/primaryblack"
+                android:textSize="16sp"
                 app:cornerRadius="200dp"
                 app:rippleColor="#000000" />
 
@@ -103,10 +105,11 @@
                 android:width="50dp"
                 android:height="100dp"
                 android:backgroundTint="@color/white2"
-                android:fontFamily="monospace"
+                android:fontFamily="sans-serif-smallcaps"
                 android:onClick="botonPorcentajeF"
                 android:text="@string/percent"
                 android:textColor="@color/primaryblack"
+                android:textSize="16sp"
                 app:backgroundTint="@color/white2"
                 app:cornerRadius="200dp" />
 
@@ -119,10 +122,11 @@
                 android:width="50dp"
                 android:height="100dp"
                 android:backgroundTintMode="add"
-                android:fontFamily="monospace"
+                android:fontFamily="sans-serif-smallcaps"
                 android:onClick="botonDivisionF"
                 android:text="@string/div"
                 android:textColor="@color/primaryblack"
+                android:textSize="16sp"
                 app:backgroundTint="#00E5FF"
                 app:backgroundTintMode="add"
                 app:cornerRadius="200dp" />
@@ -142,7 +146,8 @@
                 android:width="50dp"
                 android:height="100dp"
                 android:backgroundTint="@color/white2"
-                android:fontFamily="monospace"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textSize="16sp"
                 android:onClick="botonSiete"
                 android:text="@string/siete"
                 android:textColor="@android:color/background_dark"
@@ -156,10 +161,11 @@
                 android:width="50dp"
                 android:height="100dp"
                 android:backgroundTint="@color/white2"
-                android:fontFamily="monospace"
+                android:fontFamily="sans-serif-smallcaps"
                 android:onClick="botonOcho"
                 android:text="@string/ocho"
                 android:textColor="@android:color/background_dark"
+                android:textSize="16sp"
                 app:cornerRadius="200dp" />
 
             <Button
@@ -170,9 +176,10 @@
                 android:width="50dp"
                 android:height="100dp"
                 android:backgroundTint="@color/white2"
-                android:fontFamily="monospace"
+                android:fontFamily="sans-serif-smallcaps"
                 android:onClick="botonNueve"
                 android:text="@string/nueve"
+                android:textSize="16sp"
                 android:textColor="@android:color/background_dark"
                 app:cornerRadius="200dp" />
 
@@ -184,11 +191,12 @@
                 android:layout_weight="1"
                 android:width="50dp"
                 android:height="100dp"
-                android:fontFamily="monospace"
+                android:fontFamily="sans-serif-smallcaps"
                 android:onClick="botonMultiplicacionF"
                 android:text="@string/multi"
                 android:textColor="@color/primaryblack"
                 app:backgroundTint="#00E5FF"
+                android:textSize="16sp"
                 app:cornerRadius="200dp" />
         </LinearLayout>
 
@@ -205,7 +213,8 @@
                 android:width="50dp"
                 android:height="100dp"
                 android:backgroundTint="#EEEEEE"
-                android:fontFamily="monospace"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textSize="16sp"
                 android:onClick="botonCuatro"
                 android:text="@string/cuatro"
                 android:textColor="@color/primaryblack"
@@ -219,7 +228,8 @@
                 android:width="50dp"
                 android:height="100dp"
                 android:backgroundTint="@color/white2"
-                android:fontFamily="monospace"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textSize="16sp"
                 android:onClick="botonCinco"
                 android:text="@string/cinco"
                 android:textColor="@color/primaryblack"
@@ -233,10 +243,11 @@
                 android:width="50dp"
                 android:height="100dp"
                 android:backgroundTint="@color/white2"
-                android:fontFamily="monospace"
+                android:fontFamily="sans-serif-smallcaps"
                 android:onClick="botonSeis"
                 android:text="@string/seis"
                 android:textColor="@color/primaryblack"
+                android:textSize="16sp"
                 app:cornerRadius="200dp" />
 
             <Button
@@ -247,11 +258,12 @@
                 android:layout_weight="1"
                 android:width="50dp"
                 android:height="100dp"
-                android:fontFamily="monospace"
+                android:fontFamily="sans-serif-smallcaps"
                 android:onClick="botonRestaF"
                 android:text="@string/menos"
                 android:textColor="@color/primaryblack"
                 app:backgroundTint="#00E5FF"
+                android:textSize="16sp"
                 app:cornerRadius="200dp" />
         </LinearLayout>
 
@@ -268,9 +280,10 @@
                 android:width="50dp"
                 android:height="100dp"
                 android:backgroundTint="@color/white2"
-                android:fontFamily="monospace"
+                android:fontFamily="sans-serif-smallcaps"
                 android:onClick="botonUno"
                 android:text="@string/uno"
+                android:textSize="16sp"
                 android:textColor="@color/primaryblack"
                 app:cornerRadius="200dp" />
 
@@ -282,10 +295,11 @@
                 android:width="50dp"
                 android:height="100dp"
                 android:backgroundTint="@color/white2"
-                android:fontFamily="monospace"
+                android:fontFamily="sans-serif-smallcaps"
                 android:onClick="botonDos"
                 android:text="@string/dos"
                 android:textColor="@color/primaryblack"
+                android:textSize="16sp"
                 app:cornerRadius="200dp" />
 
             <Button
@@ -296,9 +310,10 @@
                 android:width="50dp"
                 android:height="100dp"
                 android:backgroundTint="@color/white2"
-                android:fontFamily="monospace"
+                android:fontFamily="sans-serif-smallcaps"
                 android:onClick="botonTres"
                 android:text="@string/tres"
+                android:textSize="16sp"
                 android:textColor="@color/primaryblack"
                 app:cornerRadius="200dp" />
 
@@ -310,10 +325,11 @@
                 android:layout_weight="1"
                 android:width="50dp"
                 android:height="100dp"
-                android:fontFamily="monospace"
+                android:fontFamily="sans-serif-smallcaps"
                 android:onClick="botonSumaF"
                 android:text="@string/mas"
                 android:textColor="@color/primaryblack"
+                android:textSize="16sp"
                 app:backgroundTint="#00E5FF"
                 app:cornerRadius="200dp" />
         </LinearLayout>
@@ -331,9 +347,10 @@
                 android:width="50dp"
                 android:height="100dp"
                 android:backgroundTint="@color/white2"
-                android:fontFamily="monospace"
+                android:fontFamily="sans-serif-smallcaps"
                 android:onClick="botonCero"
                 android:text="@string/cero"
+                android:textSize="16sp"
                 android:textColor="@color/primaryblack"
                 app:cornerRadius="200dp" />
 
@@ -345,7 +362,8 @@
                 android:width="50dp"
                 android:height="100dp"
                 android:backgroundTint="@color/white2"
-                android:fontFamily="monospace"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textSize="16sp"
                 android:onClick="botonPuntoF"
                 android:text="@string/punto"
                 android:textColor="@color/primaryblack"
@@ -359,7 +377,8 @@
                 android:layout_weight="1"
                 android:width="50dp"
                 android:height="100dp"
-                android:fontFamily="monospace"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textSize="16sp"
                 android:onClick="botonResultado"
                 android:text="@string/igual"
                 android:textColor="@color/primaryblack"
