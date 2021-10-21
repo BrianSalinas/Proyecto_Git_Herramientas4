@@ -17,7 +17,7 @@
     <string name="menos">-</string>
     <string name="multi">×</string>
     <string name="div">÷</string>
-    <string name="AC">AC</string>
+    <string name="AC">CLEAR</string>
     <string name="borrar">Borrar</string>
     <string name="percent">%</string>
     <string name="igual">=</string>
